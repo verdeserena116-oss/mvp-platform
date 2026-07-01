@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://mvp-platform.vercel.app', // coloque aqui a URL real que a Vercel gerar
+    'https://mvp-platform-psi.vercel.app',
   ]
 }));
 app.use(express.json());
