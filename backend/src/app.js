@@ -8,7 +8,12 @@ const routes = require('./routes');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://mvp-platform.vercel.app', // coloque aqui a URL real que a Vercel gerar
+  ]
+}));
 app.use(express.json());
 
 app.use('/api', routes);
