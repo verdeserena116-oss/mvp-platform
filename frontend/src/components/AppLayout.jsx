@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { LayoutGrid, Users, Megaphone, ChevronDown, LogOut, Building2 } from 'lucide-react';
+import { LayoutGrid, Users, Megaphone, ChevronDown, LogOut, Building2, Search } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useOperation } from '../context/OperationContext';
@@ -19,7 +19,7 @@ export default function AppLayout() {
     { to: '/', label: 'Visão geral', icon: LayoutGrid },
     { to: '/leads', label: 'Leads', icon: Users },
     { to: '/campaigns', label: 'Campanhas', icon: Megaphone },
-    { to: '/prospecting', label: 'Prospecção', icon: Radar }, // NOVO
+    { to: '/prospecting', label: 'Prospecção', icon: Search }, // NOVO
   ];
 
   return (
