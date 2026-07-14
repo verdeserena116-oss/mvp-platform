@@ -12,6 +12,7 @@ import LeadsPage from './pages/LeadsPage';
 import CampaignsPage from './pages/CampaignsPage';
 import NewCampaignPage from './pages/NewCampaignPage';
 import CampaignDetailPage from './pages/CampaignDetailPage';
+import ProspectingPage from './pages/ProspectingPage'; // NOVO
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="prospecting" element={<ProspectingPage />} /> // NOVO
 
           <Route
             path="/"
@@ -36,7 +38,9 @@ export default function App() {
             <Route path="leads" element={<LeadsPage />} />
             <Route path="campaigns" element={<CampaignsPage />} />
             <Route path="campaigns/new" element={<NewCampaignPage />} />
-            <Route path="campaigns/:id" element={<CampaignDetailPage />} />
+            <Route path="campaigns/:id" element={<CampaignDetailPage />}
+            
+             />
           </Route>
         </Routes>
       </AuthProvider>

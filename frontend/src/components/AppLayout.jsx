@@ -19,6 +19,7 @@ export default function AppLayout() {
     { to: '/', label: 'Visão geral', icon: LayoutGrid },
     { to: '/leads', label: 'Leads', icon: Users },
     { to: '/campaigns', label: 'Campanhas', icon: Megaphone },
+    { to: '/prospecting', label: 'Prospecção', icon: Radar }, // NOVO
   ];
 
   return (
